@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <body class="bg-black-500">
+        <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+            <a class="text-3xl font-bold leading-none" href="#">
+                <svg class="h-10" alt="logo" viewBox="0 0 10240 10240">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M8284 9162 c-2 -207 -55 -427 -161 -667 -147 -333 -404 -644 -733 -886 -81 -59 -247 -169 -256 -169 -3 0 -18 -9 -34 -20 -26 -19 -344 -180 -354 -180 -3 0 -29 -11 -58 -24 -227 -101 -642 -225 -973 -290 -125 -25 -397 -70 -480 -80 -22 -3 -76 -9 -120 -15 -100 -13 -142 -17 -357 -36 -29 -2 -98 -7 -153 -10 -267 -15 -436 -28 -525 -40 -14 -2 -45 -7 -70 -10 -59 -8 -99 -14 -130 -20 -14 -3 -41 -7 -60 -11 -19 -3 -39 -7 -45 -8 -5 -2 -28 -6 -50 -10 -234 -45 -617 -165 -822 -257 -23 -10 -45 -19 -48 -19 -7 0 -284 -138 -340 -170 -631 -355 -1107 -842 -1402 -1432 -159 -320 -251 -633 -308 -1056 -26 -190 -27 -635 -1 -832 3 -19 7 -59 10 -89 4 -30 11 -84 17 -120 6 -36 12 -77 14 -91 7 -43 33 -174 39 -190 3 -8 7 -28 9 -45 6 -35 52 -221 72 -285 7 -25 23 -79 35 -120 29 -99 118 -283 189 -389 67 -103 203 -244 286 -298 75 -49 178 -103 196 -103 16 0 27 16 77 110 124 231 304 529 485 800 82 124 153 227 157 230 3 3 28 36 54 74 116 167 384 497 546 671 148 160 448 450 560 542 14 12 54 45 90 75 88 73 219 172 313 238 42 29 77 57 77 62 0 5 -13 34 -29 66 -69 137 -149 405 -181 602 -7 41 -14 82 -15 90 -1 8 -6 46 -10 83 -3 37 -8 77 -10 88 -2 11 -7 65 -11 122 -3 56 -8 104 -9 107 -2 3 0 12 5 19 6 10 10 8 15 -10 10 -34 167 -346 228 -454 118 -210 319 -515 340 -515 4 0 40 18 80 40 230 128 521 255 787 343 118 40 336 102 395 113 28 5 53 11 105 23 25 5 59 12 75 15 17 3 41 8 55 11 34 7 274 43 335 50 152 18 372 29 565 29 194 0 481 -11 489 -19 2 -3 -3 -6 -12 -6 -9 -1 -20 -2 -24 -3 -33 -8 -73 -16 -98 -21 -61 -10 -264 -56 -390 -90 -649 -170 -1243 -437 -1770 -794 -60 -41 -121 -82 -134 -93 l-24 -18 124 -59 c109 -52 282 -116 404 -149 92 -26 192 -51 220 -55 17 -3 64 -12 105 -21 71 -14 151 -28 230 -41 19 -3 46 -7 60 -10 14 -2 45 -7 70 -10 25 -4 56 -8 70 -10 14 -2 53 -7 88 -10 35 -4 71 -8 81 -10 10 -2 51 -6 92 -9 101 -9 141 -14 147 -21 3 -3 -15 -5 -39 -6 -24 0 -52 -2 -62 -4 -21 -4 -139 -12 -307 -22 -242 -14 -700 -7 -880 13 -41 4 -187 27 -250 39 -125 23 -274 68 -373 111 -43 19 -81 34 -86 34 -4 0 -16 -8 -27 -17 -10 -10 -37 -33 -59 -52 -166 -141 -422 -395 -592 -586 -228 -257 -536 -672 -688 -925 -21 -36 -43 -66 -47 -68 -4 -2 -8 -7 -8 -11 0 -5 -24 -48 -54 -97 -156 -261 -493 -915 -480 -935 2 -3 47 -21 101 -38 54 -18 107 -36 118 -41 58 -25 458 -138 640 -181 118 -27 126 -29 155 -35 14 -2 45 -9 70 -14 66 -15 137 -28 300 -55 37 -7 248 -33 305 -39 28 -3 84 -9 125 -13 163 -16 792 -8 913 12 12 2 58 9 102 15 248 35 423 76 665 157 58 19 134 46 170 60 86 33 344 156 348 166 2 4 8 7 13 7 14 0 205 116 303 184 180 126 287 216 466 396 282 281 511 593 775 1055 43 75 178 347 225 455 100 227 236 602 286 790 59 220 95 364 120 485 6 28 45 245 50 275 2 14 7 41 10 60 3 19 8 49 10 65 2 17 6 46 9 65 15 100 35 262 40 335 3 39 8 89 10 112 22 225 33 803 21 1043 -3 41 -7 129 -11 195 -3 66 -8 136 -10 155 -2 19 -6 76 -10 125 -3 50 -8 101 -10 115 -2 14 -6 57 -10 95 -7 72 -12 113 -20 175 -2 19 -7 55 -10 80 -6 46 -43 295 -51 340 -2 14 -9 54 -15 90 -5 36 -16 97 -24 135 -8 39 -17 84 -20 100 -12 68 -18 97 -50 248 -19 87 -47 204 -61 260 -14 56 -27 109 -29 117 -30 147 -232 810 -253 832 -4 4 -7 -23 -8 -60z"></path>
+                </svg>
+            </a>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-blue-600 p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="text-sm text-black hover:text-black-500 font-bold" href="#">HOME</a></li>
+                <li class="text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm text-black hover:text-black-500 font-bold"href="allpracticales.html">PRACTICALS</a></li>
+                <li class="text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+               <li><a class="text-sm text-black hover:text-black-500 font-bold" href="https://script.google.com/macros/s/AKfycbz3k5Tp-LmSnm9LVUTO0AUnY_3FnSIK7PukIdRq7Sz-dCbGMKLVWFhWQt8XsviF4Yr-/exec">SUBMIT YOUR WORK</a></li>
+                <li class="text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm text-black hover:text-gray-500 font-bold" href="study_materials.html">STUDY MATERIALS</a></li>
+                <li class="text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+              
+                <li><a class="text-sm text-black hover:text-gray-500 font-bold" href="about.html">ABOUT US</a></li>
+                <li class="text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm text-black hover:text-gray-500 font-bold" href="contact.html">CONTACTS</a></li>
+            </ul>
+           
+            <!--<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-black text-sm text-white font-bold rounded-xl transition duration-100" href="#######">Sign Up</a>-->
+              <b style="color:rgb(248, 22, 22);"> 👈👈CLICK✅ HERE (IF YOU ARE USE MOBILE)</B>
+        </nav>
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                        <svg class="h-12" alt="logo" viewBox="0 0 10240 10240">
+                            <path xmlns="http://www.w3.org/2000/svg" d="M8284 9162 c-2 -207 -55 -427 -161 -667 -147 -333 -404 -644 -733 -886 -81 -59 -247 -169 -256 -169 -3 0 -18 -9 -34 -20 -26 -19 -344 -180 -354 -180 -3 0 -29 -11 -58 -24 -227 -101 -642 -225 -973 -290 -125 -25 -397 -70 -480 -80 -22 -3 -76 -9 -120 -15 -100 -13 -142 -17 -357 -36 -29 -2 -98 -7 -153 -10 -267 -15 -436 -28 -525 -40 -14 -2 -45 -7 -70 -10 -59 -8 -99 -14 -130 -20 -14 -3 -41 -7 -60 -11 -19 -3 -39 -7 -45 -8 -5 -2 -28 -6 -50 -10 -234 -45 -617 -165 -822 -257 -23 -10 -45 -19 -48 -19 -7 0 -284 -138 -340 -170 -631 -355 -1107 -842 -1402 -1432 -159 -320 -251 -633 -308 -1056 -26 -190 -27 -635 -1 -832 3 -19 7 -59 10 -89 4 -30 11 -84 17 -120 6 -36 12 -77 14 -91 7 -43 33 -174 39 -190 3 -8 7 -28 9 -45 6 -35 52 -221 72 -285 7 -25 23 -79 35 -120 29 -99 118 -283 189 -389 67 -103 203 -244 286 -298 75 -49 178 -103 196 -103 16 0 27 16 77 110 124 231 304 529 485 800 82 124 153 227 157 230 3 3 28 36 54 74 116 167 384 497 546 671 148 160 448 450 560 542 14 12 54 45 90 75 88 73 219 172 313 238 42 29 77 57 77 62 0 5 -13 34 -29 66 -69 137 -149 405 -181 602 -7 41 -14 82 -15 90 -1 8 -6 46 -10 83 -3 37 -8 77 -10 88 -2 11 -7 65 -11 122 -3 56 -8 104 -9 107 -2 3 0 12 5 19 6 10 10 8 15 -10 10 -34 167 -346 228 -454 118 -210 319 -515 340 -515 4 0 40 18 80 40 230 128 521 255 787 343 118 40 336 102 395 113 28 5 53 11 105 23 25 5 59 12 75 15 17 3 41 8 55 11 34 7 274 43 335 50 152 18 372 29 565 29 194 0 481 -11 489 -19 2 -3 -3 -6 -12 -6 -9 -1 -20 -2 -24 -3 -33 -8 -73 -16 -98 -21 -61 -10 -264 -56 -390 -90 -649 -170 -1243 -437 -1770 -794 -60 -41 -121 -82 -134 -93 l-24 -18 124 -59 c109 -52 282 -116 404 -149 92 -26 192 -51 220 -55 17 -3 64 -12 105 -21 71 -14 151 -28 230 -41 19 -3 46 -7 60 -10 14 -2 45 -7 70 -10 25 -4 56 -8 70 -10 14 -2 53 -7 88 -10 35 -4 71 -8 81 -10 10 -2 51 -6 92 -9 101 -9 141 -14 147 -21 3 -3 -15 -5 -39 -6 -24 0 -52 -2 -62 -4 -21 -4 -139 -12 -307 -22 -242 -14 -700 -7 -880 13 -41 4 -187 27 -250 39 -125 23 -274 68 -373 111 -43 19 -81 34 -86 34 -4 0 -16 -8 -27 -17 -10 -10 -37 -33 -59 -52 -166 -141 -422 -395 -592 -586 -228 -257 -536 -672 -688 -925 -21 -36 -43 -66 -47 -68 -4 -2 -8 -7 -8 -11 0 -5 -24 -48 -54 -97 -156 -261 -493 -915 -480 -935 2 -3 47 -21 101 -38 54 -18 107 -36 118 -41 58 -25 458 -138 640 -181 118 -27 126 -29 155 -35 14 -2 45 -9 70 -14 66 -15 137 -28 300 -55 37 -7 248 -33 305 -39 28 -3 84 -9 125 -13 163 -16 792 -8 913 12 12 2 58 9 102 15 248 35 423 76 665 157 58 19 134 46 170 60 86 33 344 156 348 166 2 4 8 7 13 7 14 0 205 116 303 184 180 126 287 216 466 396 282 281 511 593 775 1055 43 75 178 347 225 455 100 227 236 602 286 790 59 220 95 364 120 485 6 28 45 245 50 275 2 14 7 41 10 60 3 19 8 49 10 65 2 17 6 46 9 65 15 100 35 262 40 335 3 39 8 89 10 112 22 225 33 803 21 1043 -3 41 -7 129 -11 195 -3 66 -8 136 -10 155 -2 19 -6 76 -10 125 -3 50 -8 101 -10 115 -2 14 -6 57 -10 95 -7 72 -12 113 -20 175 -2 19 -7 55 -10 80 -6 46 -43 295 -51 340 -2 14 -9 54 -15 90 -5 36 -16 97 -24 135 -8 39 -17 84 -20 100 -12 68 -18 97 -50 248 -19 87 -47 204 -61 260 -14 56 -27 109 -29 117 -30 147 -232 810 -253 832 -4 4 -7 -23 -8 -60z"></path>
+                        </svg>
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-black-400 hover:bg-blue-50 hover:text-black-600 rounded" href="#">HOME 🏡</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-black-400 hover:bg-blue-50 hover:text-black-600 rounded" href="allpracticales.html">PRACTICALS ⚙️</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-black-400 hover:bg-blue-50 hover:text-black-600 rounded" href="https://script.google.com/macros/s/AKfycbz3k5Tp-LmSnm9LVUTO0AUnY_3FnSIK7PukIdRq7Sz-dCbGMKLVWFhWQt8XsviF4Yr-/exec">SUBMIT YOUR WORK</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-black-400 hover:bg-blue-50 hover:text-black-600 rounded" href="study_materials.html">STUDY MATERIALS 📱</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-black-400 hover:bg-blue-50 hover:text-black-600 rounded" href="about.html">ABOUT US 🧑🧑</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-bold text-black-400 hover:bg-black-50 hover:text-black-600 rounded" href="contact.html">CONTACT 📞</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <div class="pt-6">
+                       
+                        <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="######">Sign Up</a>
+                    </div>
+                    <p class="my-4 text-xs text-center text-black-400">
+                        <span>Team of DHAVAL ╰(*°▽°*)╯</span><BR>
+                        <span>Copyright © 2023</span>
+                    </p>
+                </div>
+            </nav>
+        </div>
+    </body>
+    
+    <script>
+    // Burger menus
+    document.addEventListener('DOMContentLoaded', function() {
+        // open
+        const burger = document.querySelectorAll('.navbar-burger');
+        const menu = document.querySelectorAll('.navbar-menu');
+    
+        if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+                burger[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+    
+        // close
+        const close = document.querySelectorAll('.navbar-close');
+        const backdrop = document.querySelectorAll('.navbar-backdrop');
+    
+        if (close.length) {
+            for (var i = 0; i < close.length; i++) {
+                close[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+    
+        if (backdrop.length) {
+            for (var i = 0; i < backdrop.length; i++) {
+                backdrop[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+    });
+    </script>
+<!-- component -->
+<!-- component -->
+<section>
+	<div class="bg-black text-white py-3">
+		<div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+			<div class="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
+				<h1 class="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">ThePhysicsZone</h1>
+				<h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">Space : The Timeless Infinity
+				</h2><h3>Study enables indivisuals to gain knowledge,skills and achieve their goals for a better future.</h3>
+                <br><br>
+               	<a href="http://ldce.ac.in/"
+					class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent">
+					Visit Official Website Of  L.D COLLEGE OF ENGINEERING </a>
+			</div>
+			<div class="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
+				<div class="h-48 flex flex-wrap content-center">
+					<div>
+						<img class="inline-block mt-28 hidden xl:block" src="3d-business-man-and-woman-working-at-the-table.png"></div><hr><hr>
+						<div>
+							<img class="inline-block mt-24 md:mt-5 p-8 md:p-5"  src="3d-business-young-women-standing-and-smiling.png"></div><hr><hr>
+							<div>
+								<img class="inline-block mt-28 hidden lg:block" src="3d-casual-life-girl-with-books-and-backpack-1.png"></div><hr><hr>
+							</div>
+						</div>
+					</div>
+				</div>
+            </section><br><br>
+            
+<!-- /******************************************************************************* -->
+<!-- /******************************************************************************* -->
+<!-- component -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<section style="font-family: Montserrat" class=" bg-[#071e34] flex font-medium items-center justify-center h-10">
+
+    <section class="w-64 mx-auto bg-[#20354b] rounded-2xl px-8 py-6 shadow-lg">
+        <div class="flex items-center justify-between">
+            <span class="text-gray-400 text-sm">ONLINE</span>
+            <span class="text-emerald-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+              </svg>
+            </span>
+        </div>
+        <div class="mt-6 w-fit mx-auto">
+            <img src="team photo.jpeg" class="rounded-full w-28 " alt="profile picture" srcset="">
+        </div>
+
+        <div class="mt-8 ">
+            <h2 class="text-white font-bold text-2xl tracking-wide">OUR<br/> TEAM</h2>
+        </div>
+        <p class="text-emerald-400 font-semibold mt-2.5" >
+           
+        </p>
+
+        <div class="h-1 w-full bg-black mt-8 rounded-full">
+            <div class="h-1 rounded-full w-2/5 bg-yellow-500 "></div>
+        </div>
+        <div class="mt-3 text-white text-sm">
+            <span class="text-gray-400 font-semibold">Visted:</span>
+            <span>8000  Visitors</span>
+        </div>
+
+    </section>
+
+
+</section>
+  <!-- <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> -->
+
+<!-- /******************************************************************************* -->
+<!-- component -->
+
+<!-- /******************************************************************************* -->
+<div  class="bg-cover" style="background-image: url('milad-fakurian-MJ3gfJCCw28-unsplash.jpg')" >
+    <div class="flex items-center justify-center text-center">
+        <div class="flex flex-col p-2 m-2  max-w-7xl">
+            <br> <br> <br> <br> <br>  
+                <div class="max-w-md py-4 px-8 bg-black shadow-lg rounded-lg my-20">
+                    <div class="flex justify-center md:justify-end -mt-16">
+                      <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500" src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+                    </div>
+                    <div>
+                      <h2 class="text-yellow-800 text-3xl font-semibold">The physics zone</h2><br><hr><br>
+                      <b class="mt-2 text-white">🎊Our website offers helpful resources for students during exam time. It provides a platform for downloading various study materials, performing virtual practicals and accessing related PDFs. The website also features YouTube videos for practical purposes. With a comfortable and relaxed theme, the website offers an enjoyable studying experience.😍 If you have any requirements or problems with the study materials, you can contact Dhaval Rathod for quick solutions within 10 minutes. Don't forget to rate the website for their service and have fun while studying😎 !</b>
+                    </div>
+                    <div class="flex justify-end mt-4">
+                      <a href="#" class="text-xl font-medium text-indigo-500">L.d college of engineering</a>
+                    </div>
+                  </div>   
+               
+
+    
+        <script src="https://cdn.tailwindcss.com"></script>
+            <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+            <div class='w-full max-w-lg px-max py-max mx-auto bg-white rounded-lg shadow-xl'>
+                <div class='max-w-md mx-auto space-y-2'>
+                    <!-- Component starts here -->
+                    <h2 class="flex flex-row flex-nowrap items-center my-8">
+                        <span class="flex-grow block border-t border-black" aria-hidden="true" role="presentation"></span>
+                        <span class="flex-none block mx-4   px-4 py-2.5 text-xs leading-none font-medium uppercase bg-black text-white">
+                           ✍️FEEDBACK FORM👇
+                        </span>
+                        <span class="flex-grow block border-t border-black" aria-hidden="true" role="presentation"></span>
+                    </h2>
+                    <!-- Component ends here -->
+        
+                </div>
+            </div><br>
+                    <div class="relative overflow-hidden">
+                    <iframe
+                      width="340"
+                      height="315"
+                      src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAADqWV65UQlIxQ0Q1WUg0T1MzU1ZUSkJFRE1TVTI0Ti4u"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe><br><br>
+                  </div>
+            
+                          
+                  
+</body>
+</html>
